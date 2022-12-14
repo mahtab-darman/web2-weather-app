@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>weather app</title>
+</head>
+<body>
+    <main>
+        <div class="weather-app">
+            <div class="container">
+                <h3 class="brand">The Weather</h3>
+                <div>
+                    <h1 class="temp">16 <span> &#176;</span></h1>
+                    <div class="city-time">
+                        <h1 class="name" style="display:inline-block;">Tehran</h1><br>
+                        <span class="region">Tehran</span>/
+                        <span class="country">Iran</span><br>
+
+                        <small>
+                            <span class="time">06:09</span>
+                            -
+                            <span class="date">
+                                Monday Sep 19
+                            </span>
+                        </small>
+                    </div>
+                    <div class="weather">
+                        <img src="./icons/day/sunny.png" 
+                            alt="sun icon"
+                            class="icon"
+                            width="50"
+                            height="50">
+                            <span class="condition">Cloudy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <form id="locationInput">
+                    <input type="text" class="search" placeholder="Search Location ...">
+                    <button type="submit" class="submit">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+                <ul class="cities">
+                    <li class="city">Shiraz</li>
+                    <li class="city">Esfahan</li>
+                    <li class="city">Tokyo</li>
+                    <li class="city">New York</li>
+                </ul>
+    
+                <ul class="details">
+                    <h4>Weather Details</h4>
+                    <li>
+                        <span>Cloudy</span>
+                        <span class="cloud">89%</span>
+                    </li>
+                    <li>
+                        <span>Humidity</span>
+                        <span class="humidity">64%</span>
+                    </li>
+                    <li>
+                        <span>Wind</span>
+                        <span class="wind">8Km/h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
